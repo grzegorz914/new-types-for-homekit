@@ -158,7 +158,7 @@ CommunityTypes.NoiseDetected = function() {
 // Service
 
 CommunityTypes.PowerMeter = function (displayName, subtype) {
-  Service.call(this, displayName, CommunityTypes.AtmosphericPressureSensor.UUID, subtype);
+  Service.call(this, displayName, CommunityTypes.PowerMeter.UUID, subtype);
 
   // Optional Characteristics
   this.addOptionalCharacteristic(CommunityTypes.Volts);
@@ -175,11 +175,11 @@ CommunityTypes.PowerMeter = function (displayName, subtype) {
   this.addOptionalCharacteristic(Characteristic.StatusTampered);
   this.addOptionalCharacteristic(Characteristic.Name);
 };
-CommunityTypes.AtmosphericPressureSensor.UUID = '00000001-0000-2000-8000-0026BB765291';
-inherits(CommunityTypes.AtmosphericPressureSensor, Service);
+CommunityTypes.PowerMeter.UUID = '00000001-0000-2000-8000-0026BB765291';
+inherits(CommunityTypes.PowerMeter, Service);
 
-CommunityTypes.AtmosphericPressureSensor = function (displayName, subtype) {
-  Service.call(this, displayName, CommunityTypes.AtmosphericPressureSensor.UUID, subtype);
+CommunityTypes.PowerMeter = function (displayName, subtype) {
+  Service.call(this, displayName, CommunityTypes.PowerMeter.UUID, subtype);
 
   // Required Characteristics
   this.addCharacteristic(CommunityTypes.CurrentAtmosphericPressure);
