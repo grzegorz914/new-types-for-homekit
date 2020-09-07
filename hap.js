@@ -178,8 +178,8 @@ CommunityTypes.PowerMeter = function (displayName, subtype) {
 CommunityTypes.PowerMeter.UUID = '00000001-0000-2000-8000-0026BB765291';
 inherits(CommunityTypes.PowerMeter, Service);
 
-CommunityTypes.PowerMeter = function (displayName, subtype) {
-  Service.call(this, displayName, CommunityTypes.PowerMeter.UUID, subtype);
+CommunityTypes.AtmosphericPressureSensor = function (displayName, subtype) {
+  Service.call(this, displayName, CommunityTypes.AtmosphericPressureSensor.UUID, subtype);
 
   // Required Characteristics
   this.addCharacteristic(CommunityTypes.CurrentAtmosphericPressure);
